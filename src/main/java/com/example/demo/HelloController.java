@@ -20,15 +20,21 @@ public class HelloController {
 
     @Value("${DB_URL:default_url}")
     private String myDB;
+
     @Value("${DB_USER:default_user}")
     private String myUser;
+
+    @Value("${HOSTNAME:default_hostname}")
+    private String myHostname;
+
     @RequestMapping("/hello")
 
     @ResponseBody
 
     public String sayHello() {
 
-        return "Hello ,this is version 1,"+myDB+" " + myUser;
+        return "Hello ,this is version 3 of springboot sample app,with variables"+myDB+" " +
+                myUser+" running on "+myHostname;
 
     }
 
