@@ -33,7 +33,7 @@ public class HelloController {
 
     public String sayHello() {
 
-        return "Hello ,this is version 3 of springboot sample app,with variables"+myDB+" " +
+        return "Hello ,this is production version of springboot sample app,with variables"+myDB+" " +
                 myUser+" running on "+myHostname;
 
     }
